@@ -5,12 +5,11 @@
   "type": "module",
   "scripts": {
     "check": "npx @biomejs/biome check --write .",
-    "typecheck": "tsc",
     "dev": "run-p dev:typecheck dev:server dev:biome",
-    "dev:typecheck": "npm run typecheck --watch --preserveWatchOutput",
+    "dev:typecheck": "tsc -p tsconfig.app.json --watch --preserveWatchOutput",
     "dev:server": "vite --clearScreen=false",
     "dev:biome": "node --watch --watch-preserve-output --watch-path=. biome-dev.mjs",
-    "build": "npm run typecheck && vite build",
+    "build": "tsc -p tsconfig.app.json && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
