@@ -6,10 +6,10 @@
   "scripts": {
     "check": "npx @biomejs/biome check --write .",
     "dev": "run-p dev:typecheck dev:server dev:biome",
-    "dev:typecheck": "tsc -p tsconfig.app.json --watch --preserveWatchOutput",
+    "dev:typecheck": "tsc -b --watch --preserveWatchOutput",
     "dev:server": "vite --clearScreen=false",
     "dev:biome": "node --watch --watch-preserve-output --watch-path=. biome-dev.mjs",
-    "build": "tsc -p tsconfig.app.json && vite build",
+    "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
