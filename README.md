@@ -16,11 +16,13 @@ It's just another way to run Biome. Besides using the Biome CLI or IDE extension
 
 The `dev` script calls [npm-run-all](https://github.com/mysticatea/npm-run-all) with a list of scripts to run in parallel:
 
-- TypeScript check
-- Vite dev server
-- Biome check
+- `dev:typecheck`: the TypeScript check
+- `dev:server`: the Vite dev server
+- `dev:biome`: the Biome check
 
 Each script runs in watch mode, so changes to source files like `src/App.tsx` will trigger restarts.
+
+In particular, `dev:biome` runs [`biome-dev.mjs`](biome-dev.mjs) with [Node.js's watch mode](https://nodejs.org/docs/latest/api/cli.html#--watch).
 
 ## Notes
 
