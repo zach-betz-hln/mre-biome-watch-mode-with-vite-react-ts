@@ -28,3 +28,7 @@ In particular, `dev:biome` runs [`biome-dev.mjs`](biome-dev.mjs) with [Node.js's
 
 - Created with [create-vite](https://github.com/vitejs/vite/tree/main/packages/create-vite) and the `react-ts` template
 - Inspired by [Build a Node App With TypeScript & ESBuild](https://www.totaltypescript.com/build-a-node-app-with-typescript-and-esbuild)
+
+## Discussions
+
+- https://github.com/biomejs/biome/discussions/5475
